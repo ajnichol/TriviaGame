@@ -13,6 +13,8 @@
 
 </head>
 
+<script type="text/javascript" src="assets/javascript/play-app.js"></script>
+
 <body>
 	
 	<div class="container">
@@ -25,52 +27,74 @@
 
 			</div>
 
-			<div class="col-xs-12 col-sm-12 col-md-12">
+			<button class="btn hideButton" id="startGame">Start Game</button>
+
+			<div class="col-xs-12 col-sm-12 col-md-12 hideQuestions">
 
 				<h2>Question</h2>
 				<br><br>
+				<form>
 				<ul>
-					<li>answer</li>
-					<li>answer</li>
-					<li>answer</li>
-					<li>answer</li>
+					<input type="checkbox" name="group1[]"><li>answer</li>
+					<input type="checkbox" name="group1[]"><li>answer</li>
+					<input type="checkbox" name="group1[]"><li>answer</li>
+					<input type="checkbox" name="group1[]"><li>answer</li>
 				</ul>
+				</form>
 			</div>
 
-			<div class="col-xs-12 col-sm-12 col-md-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 hideQuestions">
 
 				<h2>Question</h2>
 				<br><br>
+				<form>
 				<ul>
-					<li>answer</li>
-					<li>answer</li>
-					<li>answer</li>
-					<li>answer</li>
+					<input type="checkbox" name="group2[]"><li>answer</li>
+					<input type="checkbox" name="group2[]"><li>answer</li>
+					<input type="checkbox" name="group2[]"><li>answer</li>
+					<input type="checkbox" name="group2[]"><li>answer</li>
 				</ul>
+				</form>
 			</div>
 
-			<div class="col-xs-12 col-sm-12 col-md-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 hideQuestions">
 
 				<h2>Question</h2>
 				<br><br>
+				<form>
 				<ul>
-					<li>answer</li>
-					<li>answer</li>
-					<li>answer</li>
-					<li>answer</li>
+					<input type="checkbox" name="group3[]"><li>answer</li>
+					<input type="checkbox" name="group3[]"><li>answer</li>
+					<input type="checkbox" name="group3[]"><li>answer</li>
+					<input type="checkbox" name="group3[]"><li>answer</li>
 				</ul>
+				</form>
 			</div>
 
-			<div class="col-xs-12 col-sm-12 col-md-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 hideQuestions">
 
 				<h2>Question</h2>
 				<br><br>
+				<form>
 				<ul>
-					<li>answer</li>
-					<li>answer</li>
-					<li>answer</li>
-					<li>answer</li>
+					<input type="checkbox" name="group4[]"><li>answer</li>
+					<input type="checkbox" name="group4[]"><li>answer</li>
+					<input type="checkbox" name="group4[]"><li>answer</li>
+					<input type="checkbox" name="group4[]"><li>answer</li>
 				</ul>
+				</form>
+
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-12 results">
+
+				<h2>Game Over!</h2>
+				<br>
+				<p>Correct Answers: <span id="correctAnswers"></span></p>
+				<br>
+				<p>Wrong Answers: <span id="wrongAnswers"></span></p>
+				<br>
+				<p>Unanswered: <span id="unanswered"></span></p>
 
 			</div>
 

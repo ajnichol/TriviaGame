@@ -1,5 +1,5 @@
 //loads everything below after html is loaded
-$(document).ready(function);
+$(document).ready(function() { 
 
 	var triviaGame = {
 
@@ -15,6 +15,22 @@ $(document).ready(function);
 		stopGame: function() {
 
 		},
+	};
 
-		
-	}
+	$("#startGame").on("click", function() {
+
+		$(".hideQuestions").show();
+
+		$(".hideButton").hide();
+
+		triviaGame.startGame();
+
+	});
+
+	$('input[type="checkbox"]').on('change', function() {
+
+    $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+    
+	});
+
+});
