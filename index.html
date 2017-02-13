@@ -5,7 +5,7 @@
 <head>
 
 	<meta charset="UTF-8">
-	<title>Totally Trivial Trivia</title>
+	<title>Solar System Trivia</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -23,64 +23,70 @@
 
 			<div class="col-xs-12 col-sm-12 col-md-12">
 
-				<h1>Totally Trivial Trivia!</h1>
+				<h1>Solar System Trivia!</h1>
 
 			</div>
 
-			<button class="btn hideButton" id="startGame">Start Game</button>
+			<button class="btn hideButton" id="start-game">Start Game</button>
+
+			<div class="col-xs-12 col-sm-12 col-md-12">
+
+				<h2 class="timer">Time Remaining: <span id="timeRemaining"></span> Seconds</h2>
+
+			</div>
 
 			<div class="col-xs-12 col-sm-12 col-md-12 hideQuestions">
 
-				<h2>Question</h2>
+				<h2>Where is the Sea of Tranquility?</h2>
 				<br><br>
 				<form>
 				<ul>
-					<input type="checkbox" name="group1[]"><li>answer</li>
-					<input type="checkbox" name="group1[]"><li>answer</li>
-					<input type="checkbox" name="group1[]"><li>answer</li>
-					<input type="checkbox" name="group1[]"><li>answer</li>
+					<input class="group1" type="checkbox" name="group1[]" value="wrong"><li>Africa</li>
+					<input class="group1" type="checkbox" name="group1[]" value="correct"><li>The Moon</li>
+					<input class="group1" type="checkbox" name="group1[]" value="wrong"><li>South America</li>
+					<input class="group1" type="checkbox" name="group1[]" value="wrong"><li>Mars</li>
 				</ul>
 				</form>
 			</div>
 
 			<div class="col-xs-12 col-sm-12 col-md-12 hideQuestions">
 
-				<h2>Question</h2>
+				<h2>Which planets are Earth's neighbors?</h2>
 				<br><br>
 				<form>
 				<ul>
-					<input type="checkbox" name="group2[]"><li>answer</li>
-					<input type="checkbox" name="group2[]"><li>answer</li>
-					<input type="checkbox" name="group2[]"><li>answer</li>
-					<input type="checkbox" name="group2[]"><li>answer</li>
+					<input class="group2" type="checkbox" name="group2[]" value="wrong"><li>Mercury and Mars</li>
+					<input class="group2" type="checkbox" name="group2[]" value="wrong"><li>Mercury and Venus</li>
+					<input class="group2" type="checkbox" name="group2[]" value="correct"><li>Venus and Mars</li>
+					<input class="group2" type="checkbox" name="group2[]" value="wrong"><li>Neptune and Mars</li>
 				</ul>
 				</form>
 			</div>
 
 			<div class="col-xs-12 col-sm-12 col-md-12 hideQuestions">
 
-				<h2>Question</h2>
+				<h2>Where is the Kuiper Belt located?</h2>
 				<br><br>
 				<form>
 				<ul>
-					<input type="checkbox" name="group3[]"><li>answer</li>
-					<input type="checkbox" name="group3[]"><li>answer</li>
-					<input type="checkbox" name="group3[]"><li>answer</li>
-					<input type="checkbox" name="group3[]"><li>answer</li>
+					<input class="group3" type="checkbox" name="group3[]" value="correct"><li>Beyond Pluto</li>
+					<input class="group3" type="checkbox" name="group3[]" value="wrong"><li>Between Jupiter and Saturn</li>
+					<input class="group3" type="checkbox" name="group3[]" value="wrong"><li>Between Mars and Jupiter</li>
+					<input class="group3" type="checkbox" name="group3[]" value="wrong"><li>Beyond Neptune</li>
 				</ul>
 				</form>
 			</div>
 
 			<div class="col-xs-12 col-sm-12 col-md-12 hideQuestions">
 
-				<h2>Question</h2>
+				<h2>How many moons does Jupiter have?</h2>
 				<br><br>
 				<form>
 				<ul>
-					<input type="checkbox" name="group4[]"><li>answer</li>
-					<input type="checkbox" name="group4[]"><li>answer</li>
-					<input type="checkbox" name="group4[]"><li>answer</li>
-					<input type="checkbox" name="group4[]"><li>answer</li>
+					<input class="group4" type="checkbox" name="group4[]" value="wrong"><li>7</li>
+					<input class="group4" type="checkbox" name="group4[]" value="wrong"><li>20</li>
+					<input class="group4" type="checkbox" name="group4[]" value="correct"><li>67</li>
+					<input class="group4" type="checkbox" name="group4[]" value="wrong"><li>14</li>
 				</ul>
 				</form>
 
