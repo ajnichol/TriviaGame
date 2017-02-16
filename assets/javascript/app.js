@@ -23,6 +23,7 @@ $(document).ready(function() {
 			if (triviaGame.time === 0) {
 				triviaGame.stopGame();
 			};
+
 		},
 		//here is where we check if the user checked the right or wrong box as well as if they didnt check a box at all. 
 		stopGame: function() {
@@ -116,8 +117,10 @@ $(document).ready(function() {
 			};
 
 			$(".results").show();
+			$(".answers").show();
 			$(".timer").hide();
 			$(".hideQuestions").hide();
+			$("#submitButton").hide();
 		
 		},
 
@@ -128,8 +131,16 @@ $(document).ready(function() {
 		triviaGame.interval();
 		$(".hideQuestions").show();
 		$(".timer").show();
+		$("#submitButton").show();
 		
 	});
+	//if user is finishes the before the time runs out they may submit their answers
+	if ($("#submitButton").on("click", function() {
+
+		triviaGame.stopGame();
+		clearInterval(triviaGame.interval.setIntervalId);
+
+	}));
 	//here we make sure only one checkbox is able to be checked
 	$('input[type="checkbox"]').on('change', function() {
 
